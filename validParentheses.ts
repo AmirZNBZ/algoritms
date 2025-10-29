@@ -19,3 +19,15 @@ function isValid(s: string): boolean {
 
   return arraySorted.length === 0 ? true : false;
 }
+
+console.log(isValid("()"));
+console.log(isValid("()[]{}"));
+console.log(isValid("(]"));
+console.log(isValid("(]}"));
+console.log(isValid("([])"));
+console.log(isValid("([)]"));
+console.log(isValid("[]"));
+console.log(isValid("]"));
+console.log(isValid(")(){}"));
+console.log(isValid("([}}])"));
+console.log(isValid("){})"));
